@@ -38,6 +38,6 @@ if st.button("🔍 Predict"):
         prediction = loaded_model.predict(scaled_data)
         
         # Displaying the result
-        st.success(f"💵 Predicted Yearly Amount Spent: **${prediction[0]:,.2f}**")
+        st.success(f"💵 Predicted Yearly Amount Spent: **₹{prediction[0]:,.2f}**")
     except Exception as e:
         st.error(f"An error occurred during prediction: {str(e)}")
